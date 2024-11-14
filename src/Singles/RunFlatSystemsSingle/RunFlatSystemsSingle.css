@@ -1,0 +1,122 @@
+/* RunFlatSystemsSingle.css */
+
+/* General Container Styling */
+.single-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.single-info {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 800px;
+}
+
+.single-info:hover {
+  transform: scale(1.01);
+}
+
+.single-info h2 {
+  font-size: 2rem;
+  color: #004d99;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.single-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 8px 0;
+  color: #555;
+}
+
+.single-info strong {
+  color: #004d99;
+}
+
+/* Image Styling */
+.single-info-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.single-info-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.single-info-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: #004d99;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0073e6;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .single-info {
+    padding: 20px;
+  }
+
+  .single-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .single-info p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .single-info {
+    padding: 15px;
+  }
+
+  .single-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .single-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-info {
+    padding: 10px;
+  }
+
+  .single-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .single-info p {
+    font-size: 0.85rem;
+  }
+}

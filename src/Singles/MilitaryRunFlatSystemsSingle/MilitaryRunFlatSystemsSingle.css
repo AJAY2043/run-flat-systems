@@ -1,0 +1,77 @@
+/* MilitaryRunFlatSystemsSingle.css */
+
+/* Container for the single product details */
+.single-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f8;
+}
+
+/* Styling for product information */
+.single-info {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: #333;
+}
+
+.single-info h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+.single-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.single-info strong {
+  color: #0056b3;
+}
+
+/* Product Image */
+.single-info-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.single-info-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .single-info {
+    padding: 15px;
+  }
+  .single-info h2 {
+    font-size: 1.5rem;
+  }
+  .single-info p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-info {
+    padding: 10px;
+  }
+  .single-info h2 {
+    font-size: 1.3rem;
+  }
+  .single-info p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,182 @@
+/* Basic Section Styling */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  color: #333;
+  background-color: #f4f4f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #004d99;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: #666;
+  text-align: center;
+}
+
+.about-btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #004d99;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #006bb3;
+}
+
+/* Image Styling */
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Custom Solutions Section */
+.custom-solutions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.custom-solutions h3 {
+  font-size: 1.8rem;
+  color: #004d99;
+}
+
+.custom-solutions p {
+  font-size: 1rem;
+  color: #555;
+  margin: 15px 0;
+}
+
+/* Expertise Section */
+.expertise {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.expertise h3 {
+  font-size: 1.8rem;
+  color: #004d99;
+}
+
+.expertise-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #004d99;
+  max-width: 150px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.icon-box:hover .icon {
+  color: #007acc;
+}
+
+.icon-box h4 {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Director Signature */
+.director-sign {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.director-sign img {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.director-sign p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Animations */
+.animate-fade {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 2rem;
+  }
+  .about-content p {
+    font-size: 0.9rem;
+  }
+  .custom-solutions h3,
+  .expertise h3 {
+    font-size: 1.5rem;
+  }
+  .expertise-icons {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+  .about-content p,
+  .custom-solutions p,
+  .expertise h4 {
+    font-size: 0.9rem;
+  }
+}

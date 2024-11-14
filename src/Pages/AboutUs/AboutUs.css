@@ -1,0 +1,42 @@
+/* src/Pages/AboutUs/AboutUs.css */
+
+.about-us-section {
+    padding: 2rem;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-us-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1, h2 {
+    color: #d2232a; /* Company color */
+  }
+  
+  p, ul {
+    line-height: 1.6;
+  }
+  
+  ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-container p:last-child {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  

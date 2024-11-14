@@ -1,0 +1,132 @@
+/* Hero Container Styling */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Carousel Image Styling */
+  .hero-img-carosual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    animation: fadeSlide 3s ease-in-out infinite;
+  }
+  
+  @keyframes fadeSlide {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Overlay for Text */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    animation: overlayFade 1.5s ease;
+  }
+  
+  @keyframes overlayFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #e0e0e0;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    animation: textSlideIn 1.5s ease forwards;
+  }
+  
+  @keyframes textSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+    margin: 5px 0 20px;
+    color: #b0b0b0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: textSlideIn 2s ease forwards;
+  }
+  
+  /* Font Awesome Icon Styling */
+  .hero-overlay i {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-top: 20px;
+    animation: iconBounce 1.5s infinite alternate;
+  }
+  
+  @keyframes iconBounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-overlay h1 {
+      font-size: 2rem;
+    }
+    .hero-overlay p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-container {
+      height: 60vh;
+    }
+  
+    .hero-overlay h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-overlay p {
+      font-size: 0.9rem;
+    }
+  }
+  

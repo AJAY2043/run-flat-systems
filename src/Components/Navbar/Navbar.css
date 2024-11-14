@@ -1,0 +1,140 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-img {
+  width: 150px;
+  height: auto;
+}
+
+/* Toggle Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Navbar Links */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: #444;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-link {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-link:hover {
+  background-color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding-top: 20px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    padding-left: 0;
+    background-color: #333;
+  }
+
+  .dropdown-link {
+    padding: 10px 15px;
+    text-align: left;
+  }
+
+  /* Display menu icon on medium and small screens */
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .nav-logo-img {
+    width: 120px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .dropdown-link {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .menu-icon {
+    font-size: 1.2rem;
+  }
+}
