@@ -32,9 +32,26 @@ const Navbar = () => {
           <li>
             <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
           </li>
-          <li>
-            <Link to="/aboutus" className="nav-link" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+          <li
+            className="nav-link"
+            onMouseEnter={() => setIsServicesOpen(true)}
+            onMouseLeave={() => setIsServicesOpen(false)}
+            onClick={() => setIsServicesOpen(!isServicesOpen)}>
+            About Us <FontAwesomeIcon icon={faCaretDown} />
+            {isServicesOpen && (
+              <ul className="dropdown-menu">
+                <li><Link to="/company" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>COMPANY</Link></li>
+                <li><Link to="/ourteam" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>OUR TEAM</Link></li>
+                <li><Link to="/news" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>NEWS</Link></li>
+                <li><Link to="/markets" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>MARKETS</Link></li>
+                <li><Link to="/material" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>MATERIAL</Link></li>
+                <li><Link to="/strengths" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>STRENGTHS</Link></li>
+              </ul>
+            )}
           </li>
+          {/* <li>
+            <Link to="/aboutus" className="nav-link" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+          </li> */}
           <li
             className="nav-link"
             onMouseEnter={() => setIsServicesOpen(true)}
@@ -51,6 +68,12 @@ const Navbar = () => {
                 <li><Link to="/militarywheels" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Military Wheels</Link></li>
               </ul>
             )}
+          </li>
+          <li>
+            <Link to="/credentials" className="nav-link" onClick={() => setIsMenuOpen(false)}>CREDENTIALS</Link>
+          </li>
+          <li>
+            <Link to="/resources" className="nav-link" onClick={() => setIsMenuOpen(false)}>RESOURCES</Link>
           </li>
           <li>
             <Link to="/contactus" className="nav-link" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>

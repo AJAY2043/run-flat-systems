@@ -1,0 +1,105 @@
+/* General styles for Hero5 component */
+.hero5-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .hero5-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero5-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Text and content styling */
+  .hero5-content {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .hero5 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .hero5 p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .hero5-icon {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 20px;
+  }
+  
+  /* Styling for credentials section */
+  .hero5-credentials {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .hero5-credentials h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .hero5-credentials p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .hero5-container {
+      padding: 10px;
+    }
+  
+    .hero5-carousel {
+      height: 250px;
+    }
+  
+    .hero5 h1 {
+      font-size: 28px;
+    }
+  
+    .hero5 p {
+      font-size: 16px;
+    }
+  
+    .hero5-credentials {
+      padding: 15px;
+    }
+  
+    .hero5-credentials h2 {
+      font-size: 24px;
+    }
+  
+    .hero5-credentials p {
+      font-size: 14px;
+    }
+  }
+  
