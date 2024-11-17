@@ -10,11 +10,11 @@ const Hero2 = () => {
   return (
     <div className="hero2-container">
       <div className="hero2-content">
-        <h1 className="hero2-heading">Welcome to Premium Experience</h1>
+        <h1 className="hero2-heading">Welcome to Runflat Tire Systems</h1>
         <p className="hero2-description">
           Discover the most exquisite destinations and moments through our curated collection.
         </p>
-        <button className="hero2-btn">Explore More</button>
+        {/* <button className="hero2-btn">Explore More</button> */}
       </div>
       <div className="hero2-images">
         <img src={hero_six} alt="Hero 6" className="hero2-img fade-in" />

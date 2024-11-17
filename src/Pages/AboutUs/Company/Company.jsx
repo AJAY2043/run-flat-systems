@@ -12,7 +12,7 @@ const Company = () => {
       <div className="company-container">
         <h1>About Us</h1>
         <p>
-          <strong>RUNFLAT Tire Systems</strong> is an industry-leading specialist and custom 
+          <strong>Runflat Tire Systems</strong> is an industry-leading specialist and custom 
           RUNFLAT insert manufacturer based in Hyderabad, India. We take pride in providing 
           high-quality solutions tailored to the unique needs of our customers in the defense, 
           automotive, and off-road industries.
@@ -20,14 +20,13 @@ const Company = () => {
 
         <h2>Our Mission</h2>
         <p>
-          Our mission is to design and manufacture innovative, reliable, and durable RUNFLAT 
-          tire systems and bead locks for 4X4, 6X6, and other specialized vehicles. We aim to 
+          Our mission is to design and manufacture innovative, reliable, and durable Runflat Tire Systems and bead locks for 4X4, 6X6, and other specialized vehicles. We aim to 
           ensure safety, performance, and reliability in the toughest conditions.
         </p>
 
         <h2>What We Do</h2>
         <ul>
-          <li>Manufacture custom-made RUNFLAT solutions tailored to specific vehicle requirements.</li>
+          <li>Manufacture custom-made RUNFLAT Tire Systems tailored to specific vehicle requirements.</li>
           <li>Provide bead lock systems to enhance tire performance under low-pressure conditions.</li>
           <li>Collaborate with leading defense and automotive companies for innovative solutions.</li>
         </ul>
@@ -52,7 +51,7 @@ const Company = () => {
         <h2>Contact Us</h2>
         <p>
           Have questions or need a custom solution? Get in touch with us today! We’re here to 
-          help you find the perfect RUNFLAT system for your vehicle.
+          help you find the perfect RUNFLAT Tire Systems for your vehicle.
         </p>
       </div>
       <Footer />

@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import aboutHeroImg from '../Assets/img1.jpg';
+import aboutHeroImg from '../Assets/17.jpg';
 import vivekDirectorSign from '../Assets/vivek-sign.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCogs, faShieldAlt, faIndustry } from '@fortawesome/free-solid-svg-icons';

@@ -9,19 +9,57 @@ import hero_five from '../Assets/5.jpg';
 const Hero1 = () => {
   return (
     <div className="hero-container">
-      <div className="hero-content">
-        <h1 className="hero-title">Welcome to Premium Designs</h1>
-        <p className="hero-description">
-          Discover a world of creativity and innovation with stunning visuals and sleek animations.
-        </p>
-        <button className="hero-button">Get Started</button>
-      </div>
-      <div className="hero-images">
-        <img src={hero_one} alt="Hero 1" className="hero-img hero-img-1" />
-        <img src={hero_two} alt="Hero 2" className="hero-img hero-img-2" />
-        <img src={hero_three} alt="Hero 3" className="hero-img hero-img-3" />
-        <img src={hero_four} alt="Hero 4" className="hero-img hero-img-4" />
-        <img src={hero_five} alt="Hero 5" className="hero-img hero-img-5" />
+      <div className="hero-slider">
+        <div className="hero-slide">
+          <img src={hero_one} alt="Hero 1" className="hero-image" />
+          <div className="hero-content">
+            <h1 className="hero-title">Welcome to Luxury</h1>
+            <p className="hero-subtitle">Experience the premium lifestyle</p>
+            <button className="hero-button">
+              <i className="fas fa-arrow-right"></i> Explore More
+            </button>
+          </div>
+        </div>
+        <div className="hero-slide">
+          <img src={hero_two} alt="Hero 2" className="hero-image" />
+          <div className="hero-content">
+            <h1 className="hero-title">Unmatched Elegance</h1>
+            <p className="hero-subtitle">Crafted for the elite</p>
+            <button className="hero-button">
+              <i className="fas fa-arrow-right"></i> Discover Now
+            </button>
+          </div>
+        </div>
+        <div className="hero-slide">
+          <img src={hero_three} alt="Hero 3" className="hero-image" />
+          <div className="hero-content">
+            <h1 className="hero-title">Timeless Designs</h1>
+            <p className="hero-subtitle">Experience true artistry</p>
+            <button className="hero-button">
+              <i className="fas fa-arrow-right"></i> Learn More
+            </button>
+          </div>
+        </div>
+        <div className="hero-slide">
+          <img src={hero_four} alt="Hero 3" className="hero-image" />
+          <div className="hero-content">
+            <h1 className="hero-title">Timeless Designs</h1>
+            <p className="hero-subtitle">Experience true artistry</p>
+            <button className="hero-button">
+              <i className="fas fa-arrow-right"></i> Learn More
+            </button>
+          </div>
+        </div>
+        <div className="hero-slide">
+          <img src={hero_five} alt="Hero 3" className="hero-image" />
+          <div className="hero-content">
+            <h1 className="hero-title">Timeless Designs</h1>
+            <p className="hero-subtitle">Experience true artistry</p>
+            <button className="hero-button">
+              <i className="fas fa-arrow-right"></i> Learn More
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

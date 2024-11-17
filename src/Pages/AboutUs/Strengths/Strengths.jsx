@@ -10,12 +10,12 @@ const Strengths = () => {
       <div className="strengths-container">
         <h1>Our Strengths</h1>
         <p>
-          <strong>RunFlat International</strong> has been growing year-on-year by offering products that technically differentiate with the competition, based on criteria established with our customers. Our strengths include:
+          <strong>Runflat Tire Systems</strong> has been growing year-on-year by offering products that technically differentiate with the competition, based on criteria established with our customers. Our strengths include:
         </p>
         <div className="strength-item">
           <h2>Easy Fit</h2>
           <p>
-            Our RunFlat products are designed to be easily fitted in under 10 minutes, with no need for special, expensive tools or presses. This ensures quick and cost-effective installation, reducing downtime and making maintenance simpler.
+            Our Runflat Tire Systems products are designed to be easily fitted in under 10 minutes, with no need for special, expensive tools or presses. This ensures quick and cost-effective installation, reducing downtime and making maintenance simpler.
           </p>
         </div>
         <div className="strength-item">

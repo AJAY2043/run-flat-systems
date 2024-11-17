@@ -1,108 +1,109 @@
-/* src/Pages/MilitaryRunFlatSystems/MilitaryRunFlatSystems.css */
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
 
-.military-runflat-section {
-  padding: 40px 20px;
-  background-color: #f4f4f9;
+/* Hero Section */
+.military-runflat-hero {
+  background: linear-gradient(to right, #283048, #859398);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+}
+
+/* Introduction Section */
+.runflat-intro {
+  padding: 50px 20px;
   text-align: center;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  color: #004d99;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .section-description {
   font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
+/* Features Section */
+.runflat-features {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  justify-content: center;
 }
 
-.product-card {
-  background-color: #fff;
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transform: translateY(0);
-  transition: all 0.3s ease-in-out;
-  text-align: left;
-}
-
-.product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.product-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-.product-card:hover .product-image {
-  transform: scale(1.05);
-}
-
-.product-details {
+.feature-item {
+  text-align: center;
   padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-details h3 {
-  font-size: 1.4rem;
-  color: #333;
-  margin: 10px 0;
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.product-details p {
-  font-size: 0.95rem;
-  color: #666;
-  margin: 8px 0;
+.feature-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
 }
 
-.view-more-btn {
-  display: inline-block;
-  margin-top: 10px;
-  color: #004d99;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+/* Applications Section */
+.runflat-applications {
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.view-more-btn:hover {
-  color: #0066cc;
+.applications-list {
+  list-style: none;
+  padding: 0;
 }
 
-.view-more-btn i {
-  margin-right: 5px;
+.application-icon {
+  color: #28a745;
+  margin-right: 10px;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
+.applications-list li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-
-  .product-card {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .section-description {
-    font-size: 1rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

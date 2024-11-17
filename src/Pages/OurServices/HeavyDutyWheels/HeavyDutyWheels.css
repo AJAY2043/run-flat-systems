@@ -1,129 +1,144 @@
-/* src/Pages/HeavyDutyWheels/HeavyDutyWheels.css */
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Intro Section Styling */
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar and Footer Integration */
+nav, footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Intro Section */
 .heavy-duty-intro {
-    padding: 40px 20px;
-    background-color: #f4f4f9;
-    text-align: center;
+  background: #f4f4f4;
+  padding: 40px 20px;
+}
+
+.intro-title {
+  font-size: 2rem;
+  color: #222;
+  animation: fadeIn 1s ease-out;
+}
+
+.intro-description {
+  text-align: justify;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Features Section */
+.heavy-duty-features {
+  background: #eaeaea;
+  padding: 30px 20px;
+}
+
+.features-title {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-item {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #555;
+  animation: slideIn 1s ease-out;
+}
+
+.feature-item i {
+  color: #2a9df4;
+  margin-right: 10px;
+}
+
+/* Animation Section */
+.heavy-duty-animation {
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.animation-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.animation-box {
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  animation: zoomIn 1.2s ease-out;
+}
+
+.wheel-animation {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border: 5px solid #333;
+  border-radius: 50%;
+  border-top: 5px solid #2a9df4;
+  animation: spin 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .heavy-duty-intro h2 {
-    font-size: 2.5rem;
-    color: #004d99;
-    font-weight: bold;
-    margin-bottom: 10px;
+  to {
+    opacity: 1;
   }
-  
-  .heavy-duty-intro p {
-    font-size: 1.2rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
   }
-  
-  .quote-btn {
-    padding: 12px 20px;
-    background-color: #004d99;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .quote-btn:hover {
-    background-color: #003366;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0.8;
   }
-  
-  /* Product Section Styling */
-  .section-title {
-    font-size: 2.5rem;
-    color: #004d99;
-    text-align: center;
-    margin-top: 40px;
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
-  
-  .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .product-card {
-    background-color: #fff;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  to {
+    transform: rotate(360deg);
   }
-  
-  .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #f4f4f9;
-  }
-  
-  .product-card h3 {
-    font-size: 1.4rem;
-    color: #333;
-    margin: 15px 0;
-    padding: 0 10px;
-  }
-  
-  .product-card p {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 8px 10px;
-  }
-  
-  .view-more-btn {
-    display: inline-block;
-    color: #004d99;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .view-more-btn:hover {
-    color: #0066cc;
-  }
-  
-  .view-more-btn i {
-    margin-right: 5px;
-  }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .heavy-duty-intro h2,
-    .section-title {
-      font-size: 2rem;
-    }
-  
-    .product-card {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .heavy-duty-intro h2,
-    .section-title {
-      font-size: 1.8rem;
-    }
-  
-    .heavy-duty-intro p {
-      font-size: 1rem;
-    }
-  }
-  
+}

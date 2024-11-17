@@ -25,9 +25,9 @@ const Hero5 = () => {
       </div>
 
       <div className="hero5-content">
-        <h1>RunFlat International - Industry-Leading Supplier</h1>
+        <h1>Runflat Tire Systems - Industry-Leading Supplier</h1>
         <p>
-          <FontAwesomeIcon icon={faCheckCircle} className="hero5-icon" /> <strong>Leading the industry</strong> with innovative run-flat systems designed for defense and security.
+          <FontAwesomeIcon icon={faCheckCircle} className="hero5-icon" /> <strong>Leading the industry</strong> with innovative Runflat Tire Systems designed for defense and security.
         </p>
         <p>
           <FontAwesomeIcon icon={faShieldAlt} className="hero5-icon" /> <strong>Tested and trusted</strong> by military organizations worldwide, our products meet high standards like FINABEL, TUV, and SAE.
@@ -38,7 +38,7 @@ const Hero5 = () => {
         <div className="hero5-credentials">
           <h2>Our Credentials</h2>
           <p>
-            RunFlat International has proven that its products fulfill European requirements like FINABEL 20.A.5" P.T. (Saudi Arabia), making us the leading independent supplier in the defense sector.
+          Runflat Tire Systems has proven that its products fulfill European requirements like FINABEL 20.A.5" P.T. (Saudi Arabia), making us the leading independent supplier in the defense sector.
           </p>
           <p>
             Our products undergo rigorous testing to meet military standards including FINABEL, TUV, and SAE. Trusted by military forces and industries around the world.

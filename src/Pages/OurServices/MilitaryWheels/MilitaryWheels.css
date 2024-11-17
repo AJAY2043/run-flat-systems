@@ -1,128 +1,117 @@
-/* src/Pages/MilitaryWheels/MilitaryWheels.css */
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+}
 
-/* Intro Section Styling */
+section {
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Hero Section */
 .military-wheels-intro {
-    padding: 40px 20px;
-    background-color: #f4f4f9;
-    text-align: center;
+  background: linear-gradient(45deg, #003366, #336699);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 10px;
+}
+
+.military-wheels-intro .section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.military-wheels-intro .section-description {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Advantages Section */
+.military-wheels-advantages {
+  margin-top: 50px;
+}
+
+.military-wheels-advantages .section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.advantages-list li {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-list i {
+  font-size: 24px;
+  color: #336699;
+  margin-right: 10px;
+}
+
+/* Features Section */
+.military-wheels-features {
+  margin-top: 50px;
+}
+
+.military-wheels-features .section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.feature-item {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+  font-size: 36px;
+  color: #336699;
+  margin-bottom: 20px;
+}
+
+.feature-item h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  .military-wheels-intro h2 {
-    font-size: 2.5rem;
-    color: #004d99;
-    font-weight: bold;
-    margin-bottom: 15px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .military-wheels-intro p {
-    font-size: 1.2rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto 20px;
-  }
-  
-  .quote-btn {
-    padding: 12px 20px;
-    background-color: #004d99;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .quote-btn:hover {
-    background-color: #003366;
-  }
-  
-  /* Product Section Styling */
-  .section-title {
-    font-size: 2.5rem;
-    color: #004d99;
-    text-align: center;
-    margin: 40px 0;
-  }
-  
-  .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .product-card {
-    background-color: #fff;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #f4f4f9;
-  }
-  
-  .product-card h3 {
-    font-size: 1.4rem;
-    color: #333;
-    margin: 15px 0;
-    padding: 0 10px;
-  }
-  
-  .product-card p {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 8px 10px;
-  }
-  
-  .view-more-btn {
-    display: inline-block;
-    color: #004d99;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .view-more-btn:hover {
-    color: #0066cc;
-  }
-  
-  .view-more-btn i {
-    margin-right: 5px;
-  }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .military-wheels-intro h2,
-    .section-title {
-      font-size: 2rem;
-    }
-  
-    .product-card {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .military-wheels-intro h2,
-    .section-title {
-      font-size: 1.8rem;
-    }
-  
-    .military-wheels-intro p {
-      font-size: 1rem;
-    }
-  }
-  
+}
+
+section {
+  animation: fadeInUp 1s ease-out;
+}
