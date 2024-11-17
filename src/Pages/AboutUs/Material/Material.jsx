@@ -2,6 +2,7 @@ import React from 'react';
 import './Materials.css';
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer';
+import thumbnail_img from '../../../Components/Assets/3.jpg'
 
 const Material = () => {
   return (
@@ -32,7 +33,7 @@ const Material = () => {
         <div className="visuals">
           <h2>Material Testing & Production</h2>
           <p>We employ advanced testing techniques to ensure that our material meets all necessary standards for safety and performance. The production environment is carefully controlled to ensure the highest quality output.</p>
-          <img src="https://via.placeholder.com/600x300" alt="Material testing" />
+          <img src={thumbnail_img} alt="Material testing" />
         </div>
       </div>
       <Footer />

@@ -1,10 +1,10 @@
 import React from 'react';
 import './Hero1.css';
-import hero_one from '../Assets/1.jpg';
-import hero_two from '../Assets/2.jpg';
-import hero_three from '../Assets/3.jpg';
-import hero_four from '../Assets/4.jpg';
-import hero_five from '../Assets/5.jpg';
+import hero_one from '../Assets/7.jpg';
+import hero_two from '../Assets/10.jpg';
+import hero_three from '../Assets/13.jpg';
+import hero_four from '../Assets/16.jpg';
+import hero_five from '../Assets/3.jpg';
 
 const Hero1 = () => {
   return (
@@ -13,8 +13,8 @@ const Hero1 = () => {
         <div className="hero-slide">
           <img src={hero_one} alt="Hero 1" className="hero-image" />
           <div className="hero-content">
-            <h1 className="hero-title">Welcome to Luxury</h1>
-            <p className="hero-subtitle">Experience the premium lifestyle</p>
+            <h1 className="hero-title">Welcome to RUNFLAT Tire Systems</h1>
+            <p className="hero-subtitle">Experience the premium Products</p>
             <button className="hero-button">
               <i className="fas fa-arrow-right"></i> Explore More
             </button>
