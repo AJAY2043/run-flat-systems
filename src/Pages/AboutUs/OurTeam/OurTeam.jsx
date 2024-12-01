@@ -3,33 +3,28 @@ import './OurTeam.css';
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer';
 
+
 const OurTeam = () => {
   const teamMembers = [
     {
-      name: 'John Doe',
-      role: 'Founder & CEO',
+      name: 'Vivek Japala',
+      role: 'Manager',
       image: 'https://via.placeholder.com/150',
-      bio: 'John has over 15 years of experience in tire manufacturing and innovation.',
+      bio: 'Vivek has over 15 years of experience in tire manufacturing and innovation.',
     },
     {
-      name: 'Jane Smith',
-      role: 'Head of Operations',
+      name: 'Vivek Japala',
+      role: 'Manager',
       image: 'https://via.placeholder.com/150',
-      bio: 'Jane oversees the smooth functioning of operations with a focus on quality.',
+      bio: 'Vivek oversees the smooth functioning of operations with a focus on quality.',
     },
     {
-      name: 'Emily Johnson',
-      role: 'Lead Engineer',
+      name: 'Vivek Japala',
+      role: 'Manager',
       image: 'https://via.placeholder.com/150',
-      bio: 'Emily is the brain behind our cutting-edge RUNFLAT tire technologies.',
-    },
-    {
-      name: 'Michael Brown',
-      role: 'Marketing Manager',
-      image: 'https://via.placeholder.com/150',
-      bio: 'Michael ensures our products reach the right audience with impactful campaigns.',
-    },
-  ];
+      bio: 'Vivek is the brain behind our cutting-edge RUNFLAT tire technologies.',
+    }
+     ];
 
   return (
     <div className="our-team-container">

@@ -36,9 +36,7 @@ const Hero4 = () => {
       <div className="hero4-content">
         <h1>Welcome to Runflat Tire Systems</h1>
         <p>
-          Your trusted partner for custom RUNFLAT insert manufacturing. 
-          We provide cutting-edge solutions tailored to the needs of 4X4, 6X6, and specialty vehicles worldwide.
-        </p>
+        Proud of its 200-year-old heritage, RunFlat International also has all the attributes of a small business: responsiveness, focused expertise and ease to do business with.</p>
       </div>
     </div>
   );

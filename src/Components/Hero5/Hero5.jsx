@@ -35,15 +35,7 @@ const Hero5 = () => {
         <p>
           <FontAwesomeIcon icon={faTrophy} className="hero5-icon" /> <strong>Recognized globally</strong> for excellence in quality and performance.
         </p>
-        <div className="hero5-credentials">
-          <h2>Our Credentials</h2>
-          <p>
-          Runflat Tire Systems has proven that its products fulfill European requirements like FINABEL 20.A.5" P.T. (Saudi Arabia), making us the leading independent supplier in the defense sector.
-          </p>
-          <p>
-            Our products undergo rigorous testing to meet military standards including FINABEL, TUV, and SAE. Trusted by military forces and industries around the world.
-          </p>
-        </div>
+        
       </div>
     </div>
   );
