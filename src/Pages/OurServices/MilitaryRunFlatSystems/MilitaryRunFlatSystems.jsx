@@ -7,65 +7,33 @@ const MilitaryRunFlatSystems = () => {
   return (
     <div>
       <Navbar />
+       <div className="military-runflat-system-hero-section-heading">
+        <h1>Military Runflat System</h1>
+       </div>
+      
+       <div className="military-runflat-system-section1">
+        <h3><strong>Military Runflat Systems are critical components for vehicles operating in demanding environments, such as military, law enforcement, and special operations. These systems are designed to maintain vehicle mobility and safety even after tire deflation or severe damage.</strong></h3><br />
+        <p>When the success of your mission is on the line, trust in our Military RunFlat Systems to deliver the reliability, durability, and performance that you need to accomplish your objectives. Gain the confidence to traverse any terrain and overcome any obstacle with our battle-tested solutions.</p><br /><br />
+       </div>
+      
+       <hr />
+       <br />
+      
+       <div className="military-runflat-system-section2">
+        <h2><strong>Advantages</strong></h2>
+         <p><strong>Operational Continuity: </strong>These systems allow vehicles to continue moving after a tire is damaged, which is crucial in high-risk environments where stopping could lead to vulnerability or mission failure.</p><br />
+         <p><strong>Enhanced Safety: </strong> They provide a critical safety margin, allowing vehicles to escape from dangerous situations, such as combat zones or areas with explosive threats, even with damaged tires.</p><br />
+         <p><strong>Weight Optimized: </strong>The Runflat System weighs less so that you can carry more payload without the risk of overloading.</p><br />
+         <p><strong>Finabel Compliant: </strong> Our Runflats comply with Finabel Standard or End User Test Conditions.</p><br />
+         <p><strong>Multi Segment : </strong> The Runflat is offered in 2 or 3 piece design, this means mounting and dismounting the runflat can be done with simple hand tools.</p>
+       </div>
+        
+        <br /><br /><br />
 
-      {/* Hero Section */}
-      <section className="military-runflat-hero">
-        <div className="hero-content">
-          <h1 className="hero-title">Military RunFlat Systems</h1>
-          <p className="hero-subtitle">
-            Ensuring mobility and safety in the harshest conditions.
-          </p>
-        </div>
-      </section>
-
-      {/* Introduction Section */}
-      <section className="runflat-intro">
-        <h2 className="section-title">What are Military RunFlat Systems?</h2>
-        <p className="section-description">
-          Military RunFlat Systems are essential for vehicles operating in combat and extreme terrains. These systems enable vehicles to continue moving even after a tire puncture, enhancing mobility, safety, and mission success.
-        </p>
-      </section>
-
-      {/* Features Section */}
-      <section className="runflat-features">
-        <h2 className="section-title">Key Features</h2>
-        <div className="features-grid">
-          <div className="feature-item">
-            <i className="fas fa-shield-alt feature-icon"></i>
-            <h3 className="feature-title">Enhanced Durability</h3>
-            <p>Built to withstand rugged terrains and extreme conditions.</p>
-          </div>
-          <div className="feature-item">
-            <i className="fas fa-car-crash feature-icon"></i>
-            <h3 className="feature-title">Puncture Resistance</h3>
-            <p>Maintains mobility even after tire damage.</p>
-          </div>
-          <div className="feature-item">
-            <i className="fas fa-road feature-icon"></i>
-            <h3 className="feature-title">Operational Efficiency</h3>
-            <p>Ensures uninterrupted vehicle operation during missions.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Applications Section */}
-      <section className="runflat-applications">
-        <h2 className="section-title">Applications</h2>
-        <ul className="applications-list">
-          <li>
-            <i className="fas fa-check-circle application-icon"></i>
-            Military combat vehicles
-          </li>
-          <li>
-            <i className="fas fa-check-circle application-icon"></i>
-            Armored personnel carriers
-          </li>
-          <li>
-            <i className="fas fa-check-circle application-icon"></i>
-            Tactical transport vehicles
-          </li>
-        </ul>
-      </section>
+       <div className="military-runflat-system-section3">
+        <h2><strong>We are committed to providing comprehensive support to military organizations worldwide. From initial consultation to ongoing maintenance and training, our team stands ready to ensure that your vehicles are mission-ready at all times.</strong></h2>
+        <button>Request A Quote</button>
+       </div>
 
       <Footer />
     </div>

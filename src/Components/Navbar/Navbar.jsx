@@ -29,9 +29,9 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          <li>
+          {/* <li>
             <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          </li>
+          </li> */}
           <li
             className="nav-link"
             onMouseEnter={() => setIsServicesOpen(true)}

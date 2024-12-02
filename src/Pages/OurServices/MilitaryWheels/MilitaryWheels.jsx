@@ -8,47 +8,35 @@ const MilitaryWheels = () => {
     <div>
       <Navbar />
 
-      {/* Intro Section */}
-      <section className="military-wheels-intro">
-        <h2 className="section-title">Introduction to Military Wheels</h2>
-        <p className="section-description">
-          Military vehicles operate in some of the most demanding and hostile environments on Earth. The wheels that support these vehicles must be engineered to withstand extreme conditions, from rugged terrains to harsh weather. Military wheels are critical for ensuring mobility, operational readiness, and vehicle safety in combat and tactical situations.
-        </p>
-      </section>
+      <div className="militarywheels-hero-section-heading">
+      <strong><h1>Military Wheels</h1></strong>
+      </div>
 
-      {/* Advantages Section */}
-      <section className="military-wheels-advantages">
-        <h3 className="section-title">Advantages of Military Wheels</h3>
-        <ul className="advantages-list">
-          <li><i className="fas fa-shield-alt"></i> Enhanced Durability</li>
-          <li><i className="fas fa-cogs"></i> Superior Load Bearing</li>
-          <li><i className="fas fa-tachometer-alt"></i> Optimal Performance in Extreme Conditions</li>
-          <li><i className="fas fa-road"></i> Maximum Traction on Rough Terrains</li>
-        </ul>
-      </section>
-
-      {/* Key Features Section */}
-      <section className="military-wheels-features">
-        <h3 className="section-title">Key Features of Military Wheels</h3>
-        <div className="features-grid">
-          <div className="feature-item">
-            <i className="fas fa-fire"></i>
-            <h4>Heat Resistance</h4>
-            <p>Designed to perform under high temperatures, ensuring reliability during intense operations.</p>
-          </div>
-          <div className="feature-item">
-            <i className="fas fa-cloud"></i>
-            <h4>Weather Proof</h4>
-            <p>Built to endure extreme weather conditions like rain, snow, and heat, keeping vehicles mobile in any climate.</p>
-          </div>
-          <div className="feature-item">
-            <i className="fas fa-mountain"></i>
-            <h4>Terrain Versatility</h4>
-            <p>Optimized for smooth and rough terrain alike, offering exceptional traction on rocky, sandy, and muddy surfaces.</p>
-          </div>
+      <br />
+      
+      <div className="militarywheels-section1">
+        <h2><strong>Military vehicles operate in some of the harshest and most demanding environments on the planet. To ensure their reliability and performance, every component must be designed and constructed to withstand extreme conditions. Among these components, the wheels play a crucial role in mobility, stability, and overall vehicle performance</strong>.</h2><br />
+        <p>The Military Wheels are Multi Piece, this enhances the speed and ease of service on the field. The Wheels are designed for Vehicle loads ranging from 2000 Kilos to 5500 Kilos Per Wheel. We offer cost effective solutions without compromising on quality and safety. Wheels are available in Aluminium or Steel, Whereas the steel wheel is more economical and the aluminium wheel is known for being light weight yet strong.</p><br />
+      </div>
+      
+       <hr />
+       <br />
+      
+       <div className="militarywheels-section2">
+        <strong><h2>Advantages</h2></strong><br />
+         <p><strong>Durability: </strong>Military vehicle wheels must endure rough terrains, heavy loads, and potential impacts from obstacles and explosives. They are often made from high-strength materials such as reinforced steel or specialized alloys to provide maximum durability.</p><br />
+         <p><strong>Load-Bearing Capacity:</strong>Military vehicles, from light tactical trucks to heavy armored vehicles, carry significant weight. Wheels must support the vehicle's load without compromising performance or safety.</p><br />
+         <p><strong>Maintenance and Reparability: </strong>Ease of maintenance and repair is crucial in the field. Military vehicle wheels are designed for quick and efficient replacement to minimize downtime during operations.</p><br />
+         <p><strong>Runflat System Compatible:</strong>The Wheels are designed to be fully compatible with runflat systems and are designed to accomodate the runflat perfectly.</p><br />
         </div>
-      </section>
-
+         
+        <br /><br /><br />
+        
+        <div className="militarywheels-section3">
+          <h2><strong>Runflat Tire Systems works with many wheel manufacturing OEM's and independent manufacturers. We have the capability to supply wheels as per end user requirements.</strong></h2>
+          <button>Request A Quote</button>  
+        </div>
+     
       <Footer />
     </div>
   );
