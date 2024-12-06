@@ -12,11 +12,11 @@ const Resources = () => {
       <div className="resources-container">
         <div className="resources-section1" style={{background:'darkred',color:'white'}}>
         <h1>Resources</h1>
-        <p style={{color:'white'}}>Welcome to the RunFlat International resource center. Here you can find a range of downloadable materials to learn more about our products, services, and certifications.</p>
+        <p style={{color:'white'}}>Welcome to the Runflat Tire Systems  resource center. Here you can find a range of downloadable materials to learn more about our products, services, and certifications.</p>
         </div>
         
         <div className="resources-section2">
-        <strong><h3>RunFlat International Literature</h3></strong>
+        <strong><h3>Runflat Tire Systems  Literature</h3></strong>
         
         <FontAwesomeIcon icon={faFilePdf} style={{ color: 'red', marginRight: '8px' }} />
         <FontAwesomeIcon icon={faDownload} style={{ color: 'green' }} />          

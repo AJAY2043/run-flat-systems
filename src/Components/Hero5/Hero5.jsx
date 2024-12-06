@@ -30,7 +30,7 @@ const Hero5 = () => {
           <FontAwesomeIcon icon={faCheckCircle} className="hero5-icon" /> <strong>Leading the industry</strong> with innovative Runflat Tire Systems designed for defense and security.
         </p>
         <p>
-          <FontAwesomeIcon icon={faShieldAlt} className="hero5-icon" /> <strong>Tested and trusted</strong> by military organizations worldwide, our products meet high standards like FINABEL, TUV, and SAE.
+          <FontAwesomeIcon icon={faShieldAlt} className="hero5-icon" /> <strong>Tested and trusted</strong> by military organizations in India, our products meet high standards like FINABEL, TUV, and SAE.
         </p>
         <p>
           <FontAwesomeIcon icon={faTrophy} className="hero5-icon" /> <strong>Recognized globally</strong> for excellence in quality and performance.

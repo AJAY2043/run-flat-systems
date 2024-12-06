@@ -9,7 +9,7 @@ import OurProducts from '../OurProducts/OurProducts'
 // import FAQ from '../FAQ/FAQ'
 // import Testimonals from '../Testimonals/Testimonals'
 import HeroImg from '../HeroImg/HeroImg'
-import Hero1 from '../Hero1/Hero1'
+// import Hero1 from '../Hero1/Hero1'
 // import Hero2 from '../Hero2/Hero2'
 // import Hero3 from '../Hero3/Hero3'
 import Hero5 from '../Hero5/Hero5'
@@ -21,7 +21,7 @@ const Sections = () => {
         <HeroImg/>
         <About/>
         <Hero5/>
-        <Hero1/>
+        {/* <Hero1/> */}
         <OurProducts/>
         {/* <Hero2/> */}
         {/* <Testimonals/> */}

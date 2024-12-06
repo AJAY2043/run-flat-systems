@@ -1,108 +1,76 @@
-/* Base Styles */
-body {
-  font-family: 'Arial', sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-h2, h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-p {
-  line-height: 1.6;
+body {
+  background-color: #f1f1f1;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Navbar and Footer Integration */
-nav, footer {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
+/* Hero Section */
+.heavyduty-hero-section-heading {
+  background: linear-gradient(135deg, #4a4e69, #22223b);
+  color: white;
+  padding: 100px 20px;
   text-align: center;
-}
-
-/* Intro Section */
-.heavy-duty-intro {
-  background: #f4f4f4;
-  padding: 40px 20px;
-}
-
-.intro-title {
-  font-size: 2rem;
-  color: #222;
   animation: fadeIn 1s ease-out;
 }
 
-.intro-description {
-  text-align: justify;
-  animation: fadeIn 1.5s ease-out;
-}
-
-/* Features Section */
-.heavy-duty-features {
-  background: #eaeaea;
-  padding: 30px 20px;
-}
-
-.features-title {
-  font-size: 1.8rem;
-  color: #444;
-  margin-bottom: 20px;
-  animation: fadeIn 1s ease-out;
-}
-
-.features-list {
-  list-style: none;
-  padding: 0;
-}
-
-.feature-item {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: #555;
+.heavyduty-hero-section-heading h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   animation: slideIn 1s ease-out;
 }
 
-.feature-item i {
-  color: #2a9df4;
-  margin-right: 10px;
-}
-
-/* Animation Section */
-.heavy-duty-animation {
-  background: #fff;
-  padding: 30px 20px;
-}
-
-.animation-title {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 20px;
-  animation: fadeIn 1s ease-out;
-}
-
-.animation-box {
+/* Section 1 */
+.heavyduty-section1 {
+  background-color: #ffffff;
+  padding: 50px 20px;
   text-align: center;
-  padding: 20px;
-  border: 2px dashed #ccc;
-  border-radius: 10px;
-  animation: zoomIn 1.2s ease-out;
+  animation: fadeInUp 1s ease-out;
 }
 
-.wheel-animation {
-  width: 100px;
-  height: 100px;
-  margin: 20px auto;
-  border: 5px solid #333;
-  border-radius: 50%;
-  border-top: 5px solid #2a9df4;
-  animation: spin 2s linear infinite;
+.heavyduty-section1 h2 {
+  font-size: 2rem;
+  color: #2a2a2a;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-/* Keyframes */
+.heavyduty-section1 p {
+  font-size: 1.2rem;
+  color: #5e5e5e;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heavyduty-hero-section-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .heavyduty-section1 h2 {
+    font-size: 1.8rem;
+  }
+
+  .heavyduty-section1 p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -114,31 +82,22 @@ nav, footer {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-50px);
+    transform: translateY(-30px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
-@keyframes zoomIn {
+@keyframes fadeInUp {
   from {
-    transform: scale(0.8);
-    opacity: 0.8;
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: scale(1);
     opacity: 1;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    transform: translateY(0);
   }
 }

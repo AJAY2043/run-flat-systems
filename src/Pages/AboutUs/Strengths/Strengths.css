@@ -1,43 +1,131 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.strengths-hero-section {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.strengths-hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.strengths-hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Strength Section */
 .strengths-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.strength-section1,
+.strength-section2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.strength-box {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.strength-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.strength-icon {
+  color: #ff6600;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.strength-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.strength-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .strengths-container h1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .strengths-hero-section h1 {
     font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
   }
-  
-  .strengths-container p {
+
+  .strengths-hero-section p {
     font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
   }
-  
-  .strength-item {
-    margin-bottom: 30px;
+
+  .strength-box {
+    padding: 30px;
   }
-  
-  .strength-item h2 {
-    font-size: 1.8rem;
-    color: #0066cc;
-    margin-bottom: 10px;
+
+  .strength-box h3 {
+    font-size: 1.3rem;
   }
-  
-  .strength-item p {
-    font-size: 1.1rem;
-    color: #333;
+
+  .strength-box p {
+    font-size: 0.9rem;
   }
-  
-  @media (max-width: 768px) {
-    .strengths-container h1 {
-      font-size: 2rem;
-    }
-    .strength-item h2 {
-      font-size: 1.6rem;
-    }
-  }
-  
+}

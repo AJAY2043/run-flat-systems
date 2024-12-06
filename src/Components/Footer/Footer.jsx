@@ -3,6 +3,7 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Company Info */}
         <div className="footer-section company-info">
-          <h3>RunFlat Tires</h3>
+          <h3>Runflat Tire Systems</h3>
           <p>Industry-leading specialist in custom RUNFLAT tires based out of Hyderabad, India.</p>
           <p>Delivering safety and durability with every drive.</p>
         </div>
@@ -23,10 +24,10 @@ const Footer = () => {
         <div className="footer-section quick-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Our Services</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <Link to='/'><p><strong>Home</strong></p></Link>
+            <Link to='/company'><p><strong>About Us</strong></p></Link>
+            <Link to='/resources'><p><strong>Our Services</strong></p></Link>
+            <Link to='/contactus'><p><strong>Contact Us</strong></p></Link>
           </ul>
         </div>
 
@@ -34,11 +35,11 @@ const Footer = () => {
         <div className="footer-section services-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="/runflatsystems">RUNFLAT Systems</a></li>
-            <li><a href="/militaryrunflatsystem">Military Runflat System</a></li>
-            <li><a href="/beadlocksystem">Beadlock System</a></li>
-            <li><a href="/heavydutywheels">Heavy Duty Wheels</a></li>
-            <li><a href="/militarywheels">Military Wheels</a></li>
+             <Link to='/runflatsystems'><p><strong>RUNFLAT Systems</strong></p></Link>
+             <Link to='/militaryrunflatsystem'><p><strong>Military Runflat System</strong></p></Link>
+             <Link to='/beadlocksystem'><p><strong>Beadlock System</strong></p></Link>
+             <Link to='/heavydutywheels'><p><strong>Heavy Duty Wheels</strong></p></Link>
+             <Link to='/militarywheels'><p><strong>Military Wheels</strong></p></Link>
           </ul>
         </div>
 
@@ -64,8 +65,8 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>&copy; 2024 RunFlat Tires. All rights reserved.</p>
-        <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a> | <a href="/sitemap">Site Map</a></p>
+        <p>&copy; 2024 Runflat Tire Systems . All rights reserved.</p>
+        <p>Privacy Policy | Terms & Conditions | Site Map</p>
       </div>
 
       {/* Scroll to Top Button */}
@@ -77,3 +78,4 @@ const Footer = () => {
 };
 
 export default Footer;
+  

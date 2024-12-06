@@ -14,7 +14,7 @@ const About = () => {
           Runflat Tire Systems is dedicated to providing advanced tire solutions that enhance durability, safety, and performance.
           With cutting-edge technology, we serve a variety of industries, ensuring quality and reliability at every step.
         </p>
-        <button className="about-btn">Learn More</button>
+        {/* <button className="about-btn">Learn More</button> */}
       </div>
 
       <div className="about-image">

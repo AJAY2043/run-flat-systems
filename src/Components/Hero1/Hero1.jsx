@@ -35,9 +35,9 @@ const Hero1 = () => {
           <div className="hero-content">
             <h1 className="hero-title">Timeless Designs</h1>
             <p className="hero-subtitle">Experience true artistry</p>
-            <button className="hero-button">
+            {/* <button className="hero-button">
               <i className="fas fa-arrow-right"></i> Learn More
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="hero-slide">
@@ -45,9 +45,9 @@ const Hero1 = () => {
           <div className="hero-content">
             <h1 className="hero-title">Timeless Designs</h1>
             <p className="hero-subtitle">Experience true artistry</p>
-            <button className="hero-button">
+            {/* <button className="hero-button">
               <i className="fas fa-arrow-right"></i> Learn More
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="hero-slide">
@@ -55,9 +55,9 @@ const Hero1 = () => {
           <div className="hero-content">
             <h1 className="hero-title">Timeless Designs</h1>
             <p className="hero-subtitle">Experience true artistry</p>
-            <button className="hero-button">
+            {/* <button className="hero-button">
               <i className="fas fa-arrow-right"></i> Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

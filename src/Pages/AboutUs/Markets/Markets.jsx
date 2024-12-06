@@ -19,10 +19,10 @@ const Markets = () => {
       <div className="markets-container">
         <div className="market-hero-section">
           <h2>Markets</h2>
-          <p>RunFlat International is the leading independent RunFlat systems supplier in the defence and security sector.</p>
+          <p>Runflat Tire Systems  is the leading independent RunFlat systems supplier in the defence and security sector.</p>
         </div>
         <div className="market-section1">
-          <h3>RunFlat International sells products to a wide range of markets and applications. Following our success with the Ministries of Defence and Interiors of many countries (UK, Spain, Germany, India, Pakistan, Thailand, Malaysia..), RunFlat International have expanded our product range and are offering into a wide range of applications including:</h3>
+          <h3>Runflat Tire Systems  sells products to a wide range of markets and applications. Following our success with the Ministries of Defence and Interiors of many countries (UK, Spain, Germany, India, Pakistan, Thailand, Malaysia..), Runflat Tire Systems  have expanded our product range and are offering into a wide range of applications including:</h3>
         <ul className='market-section1-ul-listitems'>
           <li><FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '15px',marginLeft:'15px', paddingLeft:'5px', color:'white',background:'red',borderRadius:'5px' }}/> Emergency Vehicles</li>
           <li><FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '15px',marginLeft:'15px', paddingLeft:'5px', color:'white',background:'red',borderRadius:'5px' }}/>VIP Cars</li>
@@ -35,27 +35,27 @@ const Markets = () => {
         </ul>
         </div>
         <div className="market-section2-vehicles">
-          <div className="vehicle-one"><img src={emergency_vehicles} alt="emergency_vehicles" />
+          <div className="vehicle-one"><img src={emergency_vehicles} alt="emergency_vehicles" width='400px' />
           <h3>Security Armoured Vehicles</h3>
           </div>
           <div className="vehicle-two">
-            <img src={vip_cars} alt="Military Armoured Vehicles" />
+            <img src={vip_cars} alt="Military Armoured Vehicles" width='400px' />
             <h3>Military Armoured Vehicles</h3>
           </div>
           <div className="vehicle-three">
-            <img src={off_road_vehicles} alt="Off Road Vehicles" />
+            <img src={off_road_vehicles} alt="Off Road Vehicles"  width='400px' />
             <h3>Off Road Vehicles</h3>
           </div>
           <div className="vehicle-four">
-            <img src={Cash_in_Transit} alt="Cash in Transit" />
+            <img src={Cash_in_Transit} alt="Cash in Transit"  width='400px' />
             <h3>Cash in Transit</h3>
           </div>
           <div className="vehicle-five">
-            <img src={mass_transit_vehicles} alt="Mass Transit Vehicles" />
+            <img src={mass_transit_vehicles} alt="Mass Transit Vehicles"  width='400px' />
             <h3>Mass Transit Vehicles</h3>
           </div>
           <div className="vehicle-six">
-            <img src={autonomous_vehicles} alt="Autonomous Vehicles" />
+            <img src={autonomous_vehicles} alt="Autonomous Vehicles"  width='400px' />
             <h3>Autonomous Vehicles</h3>
           </div>
         </div>

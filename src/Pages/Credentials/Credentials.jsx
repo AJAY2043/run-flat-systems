@@ -26,9 +26,9 @@ const Credentials = () => {
           <p>Our products are regularly and arduously tested according to military standards such as FINABEL, TUV and American standards (SAEJ 2014) as well as specific standards established by certain countries or manufacturers (including Plasan 300km and Mercedes 150km tests).</p>
         </div>
         <div className="credentials-section2-img">
-          <img src={img_logo3} alt="" />
-          <img src={img_logo1} alt="" />
-          <img src={img_logo2} alt="" />
+          <img src={img_logo3} alt="" width='400px'/>
+          <img src={img_logo1} alt="" width='400px'/>
+          <img src={img_logo2} alt="" width='400px'/>
         </div>
       
         <div className="credentials-section3">
@@ -38,7 +38,7 @@ const Credentials = () => {
         </div>
       
         <div className="credentials-section4-img">
-          <img src={center_image} alt="" /> <br /><br />
+          <img src={center_image} alt="" width='400px'/> <br /><br />
           <p>Runflat Tire Systems have been trialled and approved by Ministries of Defence INDIA</p> <br />
            <img src={india_flag} alt="" />
            
@@ -57,7 +57,7 @@ const Credentials = () => {
         </div>
         <div className="credentials-section6-ytvideos">
   <iframe
-    width="560"
+    width="400"
     height="315"
     src="https://www.youtube.com/embed/BgtKxVZvtps"
     title="YouTube video 1"
@@ -67,7 +67,7 @@ const Credentials = () => {
   </iframe>
 
   <iframe
-    width="560"
+    width="400"
     height="315"
     src="https://www.youtube.com/embed/t0EjOwS91rA"
     title="YouTube video 2"
@@ -77,7 +77,7 @@ const Credentials = () => {
   </iframe>
 
   <iframe
-    width="560"
+    width="400"
     height="315"
     src="https://www.youtube.com/embed/Mbg-A4QnAmw"
     title="YouTube video 3"
@@ -87,7 +87,7 @@ const Credentials = () => {
   </iframe>
 
   <iframe
-    width="560"
+    width="400"
     height="315"
     src="https://www.youtube.com/embed/67oGE2yjTx0"
     title="YouTube video 4"
