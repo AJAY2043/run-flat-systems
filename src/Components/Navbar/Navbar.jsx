@@ -25,9 +25,9 @@ const Navbar = () => {
 
         {/* Navbar Section */}
         <div className="navbar">
-          <div className="nav-logo">
+          <div className="nav-logo" style={{background:'none'}}>
             <Link to="/">
-              <img src={Runflat_logo} alt="Runflat Logo" width="120" />
+              <img src={Runflat_logo} alt="Runflat Logo" width="120"/>
             </Link>
           </div>
 
@@ -44,12 +44,12 @@ const Navbar = () => {
               </span>
               {isAboutUsOpen && (
                 <div className="dropdown">
-                  <Link to="/company" style={{color:'blue'}}>Company</Link>
-                  <Link to="/ourteam" style={{color:'blue'}}>Our Team</Link>
-                  <Link to="/news" style={{color:'orange'}}>News</Link>
-                  <Link to="/markets" style={{color:'orange'}}>Market</Link>
-                  <Link to="/material" style={{color:'green'}}>Material</Link>
-                  <Link to="/strengths" style={{color:'green'}}>Strength</Link>
+                  <Link to="/company" style={{color:'blue',background:'none'}}>Company</Link>
+                  <Link to="/ourteam" style={{color:'blue',background:'none'}}>Our Team</Link>
+                  <Link to="/news" style={{color:'orange',background:'none'}}>News</Link>
+                  <Link to="/markets" style={{color:'orange',background:'none'}}>Market</Link>
+                  <Link to="/material" style={{color:'green',background:'none'}}>Material</Link>
+                  <Link to="/strengths" style={{color:'green',background:'none'}}>Strength</Link>
                 </div>
               )}
             </div>
@@ -60,23 +60,23 @@ const Navbar = () => {
               </span>
               {isServicesOpen && (
                 <div className="dropdown">
-                  <Link to="/runflat-tires" style={{color:'blue'}}>Runflat Tires Systems</Link>
-                  <Link to="/military-runflat-tires" style={{color:'blue'}}>Military Runflat Tires Systems</Link>
-                  <Link to="/beadlock-systems" style={{color:'orange'}}>Beadlock Systems</Link>
-                  <Link to="/heavy-duty-wheels" style={{color:'green'}}>Heavy-duty Wheels</Link>
-                  <Link to="/military-wheels" style={{color:'green'}}>Military Wheels</Link>
+                  <Link to="/runflatsystems" style={{color:'blue',background:'none'}}>Runflat Tires Systems</Link>
+                  <Link to="/militaryrunflatsystem" style={{color:'blue',background:'none'}}>Military Runflat Tires Systems</Link>
+                  <Link to="/beadlocksystem" style={{color:'orange',background:'none'}}>Beadlock Systems</Link>
+                  <Link to="/heavydutywheels" style={{color:'green',background:'none'}}>Heavy-duty Wheels</Link>
+                  <Link to="/militarywheels" style={{color:'green',background:'none'}}>Military Wheels</Link>
                 </div>
               )}
             </div>
 
             <div className="nav-item">
-              <Link to="/credentials" style={{color:'orange'}}>Credentials</Link>
+              <Link to="/credentials" style={{color:'orange',background:'none'}}>Credentials</Link>
             </div>
             <div className="nav-item">
-              <Link to="/resources" style={{color:'orange'}}>Resources</Link>
+              <Link to="/resources" style={{color:'orange',background:'none'}}>Resources</Link>
             </div>
             <div className="nav-item">
-              <Link to="/contactus" style={{color:'green'}}>Contact Us</Link>
+              <Link to="/contactus" style={{color:'green',background:'none'}}>Contact Us</Link>
             </div>
           </div>
         </div>

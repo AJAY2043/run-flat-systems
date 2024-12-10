@@ -5,6 +5,7 @@ import ContactUs from '../ContactUs/ContactUs'
 import MainHero from '../MainHero/MainHero'
 import Product from '../Product/Product'
 import Products from '../ProductsList/Products'
+import Footer from '../Footer/Footer'
 
 const Sections = () => {
   return (
@@ -15,11 +16,13 @@ const Sections = () => {
         <About/>
         
         <Product/>
-        
+
         <Products/>
 
 
         <ContactUs/>
+
+        <Footer/>
         
     </div>
   )

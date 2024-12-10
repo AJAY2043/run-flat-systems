@@ -1,131 +1,115 @@
-/* Reset and Global Styles */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #f7f7f7;
-  color: #333;
-  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
 }
 
-/* Hero Section */
-.strengths-hero-section {
-  background-color: #1e1e1e;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.strengths-hero-section h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.strengths-hero-section p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
-/* Strength Section */
-.strengths-container {
+/* Strengths Page Styling */
+.strengths {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 20px;
 }
 
-.strength-section1,
-.strength-section2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  margin-bottom: 60px;
+/* Hero Section Styling */
+.Strengths-page-hero-section1 {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height for mobile responsiveness */
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.strength-box {
-  background-color: #ffffff;
-  padding: 40px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  animation: fadeInUp 1s ease-out forwards;
+.Strengths-page-hero-section1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
 }
 
-.strength-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+/* Hero Section Heading */
+.Strengths-page-hero-section1 h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 90%;
+  text-align: left;
 }
 
-.strength-icon {
-  color: #ff6600;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
+/* Section Styling */
+.strength-page-section1 {
+  margin-top: 20px;
 }
 
-.strength-box h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.page-section1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.page-section1 h3 {
+  font-size: 22px;
+  color: #333;
   margin-bottom: 10px;
 }
 
-.strength-box p {
-  font-size: 1rem;
+.page-section1 p {
+  font-size: 16px;
   color: #555;
   line-height: 1.6;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Responsive Design */
-@media screen and (max-width: 768px) {
-  .strengths-hero-section h1 {
-    font-size: 2.5rem;
+@media (max-width: 768px) {
+  .Strengths-page-hero-section1 h2 {
+    font-size: 20px;
+    bottom: 10px;
+    left: 10px;
   }
 
-  .strengths-hero-section p {
-    font-size: 1rem;
+  .page-section1 {
+    padding: 15px;
   }
 
-  .strength-box {
-    padding: 30px;
+  .page-section1 h3 {
+    font-size: 20px;
   }
 
-  .strength-box h3 {
-    font-size: 1.3rem;
+  .page-section1 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Strengths-page-hero-section1 h2 {
+    font-size: 18px;
+    bottom: 5px;
+    left: 5px;
   }
 
-  .strength-box p {
-    font-size: 0.9rem;
+  .page-section1 {
+    padding: 10px;
+  }
+
+  .page-section1 h3 {
+    font-size: 18px;
+  }
+
+  .page-section1 p {
+    font-size: 12px;
   }
 }
