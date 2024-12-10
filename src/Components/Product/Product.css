@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Section Styling */
+.products-section {
+  position: relative;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f7f9fc, #e3e9f2);
+  color: #333;
+  text-align: center;
+}
+
+/* Top Image Styling */
+.products-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  animation: fadeInTop 1s ease-in-out;
+}
+
+/* Content Container */
+.products-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+/* Description Text Styling */
+.products-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #7a8a9d;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Hover Animation for Product Cards */
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Arrow Icon Styling */
+.arrow-icon {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon:hover {
+  transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products-section {
+    padding: 40px 10px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .products-description {
+    font-size: 1rem;
+  }
+
+  .products-image {
+    height: 350px;
+  }
+}

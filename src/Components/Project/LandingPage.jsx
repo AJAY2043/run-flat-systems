@@ -8,7 +8,7 @@ const LandingPage = () => {
     <div>
         <Navbar/>
         <Sections/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

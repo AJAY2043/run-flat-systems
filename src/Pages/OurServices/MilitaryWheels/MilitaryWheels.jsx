@@ -32,12 +32,12 @@ const MilitaryWheels = () => {
          
         <br /><br /><br />
         
-        <div className="militarywheels-section3">
+        <div className="militarywheels-section3" style={{background:'lightblue'}}>
           <h2><strong>Runflat Tire Systems works with many wheel manufacturing OEM's and independent manufacturers. We have the capability to supply wheels as per end user requirements.</strong></h2>
           <button>Request A Quote</button>  
         </div>
      
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -30,12 +30,12 @@ const MilitaryRunFlatSystems = () => {
         
         <br /><br /><br />
 
-       <div className="military-runflat-system-section3">
+       <div className="military-runflat-system-section3" style={{background:'lightblue'}}>
         <h2><strong>We are committed to providing comprehensive support to military organizations worldwide. From initial consultation to ongoing maintenance and training, our team stands ready to ensure that your vehicles are mission-ready at all times.</strong></h2>
         <button>Request A Quote</button>
        </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

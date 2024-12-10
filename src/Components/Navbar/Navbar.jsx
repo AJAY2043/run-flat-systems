@@ -1,86 +1,87 @@
-// src/Components/Navbar.jsx
-
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
+import './Navbar.css';
+import Runflat_logo from '../Assets/run-flat-logo.jpg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';
-import navbar_logo from '../Assets/logo.jpg';
+import { faBars, faTimes, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAboutUsOpen, setIsAboutUsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleAboutUsDropdown = () => setIsAboutUsOpen(!isAboutUsOpen);
+  const toggleServicesDropdown = () => setIsServicesOpen(!isServicesOpen);
 
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        {/* Updated Logo with Image */}
-        <Link to="/" className="nav-logo">
-          <img src={navbar_logo} alt="RunFlat Systems" className="nav-logo-img" />
-        </Link>
+    <div>
+      <div className="main-nav">
+        {/* Marquee Section */}
+        <div className="nav-scroll-marquee">
+  <p className="scroll-text">🚗 Welcome To Run Flat Tire Systems! 🚗</p>
+</div>
 
-        {/* Toggle Menu Icon for Small and Medium Screens */}
-        <div className="menu-icon" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+
+        {/* Navbar Section */}
+        <div className="navbar">
+          <div className="nav-logo">
+            <Link to="/">
+              <img src={Runflat_logo} alt="Runflat Logo" width="120" />
+            </Link>
+          </div>
+
+          {/* Mobile Toggle Button */}
+          <div className="nav-toggle" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" />
+          </div>
+
+          {/* Menu Links */}
+          <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+            <div className="nav-item">
+              <span onClick={toggleAboutUsDropdown}>
+                About Us <FontAwesomeIcon icon={faChevronDown} />
+              </span>
+              {isAboutUsOpen && (
+                <div className="dropdown">
+                  <Link to="/company" style={{color:'blue'}}>Company</Link>
+                  <Link to="/ourteam" style={{color:'blue'}}>Our Team</Link>
+                  <Link to="/news" style={{color:'orange'}}>News</Link>
+                  <Link to="/markets" style={{color:'orange'}}>Market</Link>
+                  <Link to="/material" style={{color:'green'}}>Material</Link>
+                  <Link to="/strengths" style={{color:'green'}}>Strength</Link>
+                </div>
+              )}
+            </div>
+
+            <div className="nav-item">
+              <span onClick={toggleServicesDropdown}>
+                Our Services <FontAwesomeIcon icon={faChevronDown} />
+              </span>
+              {isServicesOpen && (
+                <div className="dropdown">
+                  <Link to="/runflat-tires" style={{color:'blue'}}>Runflat Tires Systems</Link>
+                  <Link to="/military-runflat-tires" style={{color:'blue'}}>Military Runflat Tires Systems</Link>
+                  <Link to="/beadlock-systems" style={{color:'orange'}}>Beadlock Systems</Link>
+                  <Link to="/heavy-duty-wheels" style={{color:'green'}}>Heavy-duty Wheels</Link>
+                  <Link to="/military-wheels" style={{color:'green'}}>Military Wheels</Link>
+                </div>
+              )}
+            </div>
+
+            <div className="nav-item">
+              <Link to="/credentials" style={{color:'orange'}}>Credentials</Link>
+            </div>
+            <div className="nav-item">
+              <Link to="/resources" style={{color:'orange'}}>Resources</Link>
+            </div>
+            <div className="nav-item">
+              <Link to="/contactus" style={{color:'green'}}>Contact Us</Link>
+            </div>
+          </div>
         </div>
-
-        <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          {/* <li>
-            <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          </li> */}
-          <li
-            className="nav-link"
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
-            onClick={() => setIsServicesOpen(!isServicesOpen)}>
-            About Us <FontAwesomeIcon icon={faCaretDown} />
-            {isServicesOpen && (
-              <ul className="dropdown-menu">
-                <li><Link to="/company" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>COMPANY</Link></li>
-                <li><Link to="/ourteam" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>OUR TEAM</Link></li>
-                <li><Link to="/news" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>NEWS</Link></li>
-                <li><Link to="/markets" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>MARKETS</Link></li>
-                <li><Link to="/material" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>MATERIAL</Link></li>
-                <li><Link to="/strengths" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>STRENGTHS</Link></li>
-              </ul>
-            )}
-          </li>
-          {/* <li>
-            <Link to="/aboutus" className="nav-link" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-          </li> */}
-          <li
-            className="nav-link"
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
-            onClick={() => setIsServicesOpen(!isServicesOpen)}
-          >
-            Our Services <FontAwesomeIcon icon={faCaretDown} />
-            {isServicesOpen && (
-              <ul className="dropdown-menu">
-                <li><Link to="/runflatsystems" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>RUNFLAT Systems</Link></li>
-                <li><Link to="/militaryrunflatsystem" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Military Runflat System</Link></li>
-                <li><Link to="/beadlocksystem" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Beadlock System</Link></li>
-                <li><Link to="/heavydutywheels" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Heavy Duty Wheels</Link></li>
-                <li><Link to="/militarywheels" className="dropdown-link" onClick={() => setIsMenuOpen(false)}>Military Wheels</Link></li>
-              </ul>
-            )}
-          </li>
-          <li>
-            <Link to="/credentials" className="nav-link" onClick={() => setIsMenuOpen(false)}>CREDENTIALS</Link>
-          </li>
-          <li>
-            <Link to="/resources" className="nav-link" onClick={() => setIsMenuOpen(false)}>RESOURCES</Link>
-          </li>
-          <li>
-            <Link to="/contactus" className="nav-link" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
-          </li>
-        </ul>
       </div>
-    </nav>
+    </div>
   );
 };
 

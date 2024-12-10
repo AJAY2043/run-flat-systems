@@ -32,11 +32,11 @@ const RunFlatSystems = () => {
       
       <br /><br />
       
-      <div className="runflatsystem-section3">
-        <Link to={'/contactus'}><button>Request A Quote</button></Link>
+      <div className="runflatsystem-section3" style={{background:'lightblue'}}>
+        <Link to={'/contactus'}><button >Request A Quote</button></Link>
       </div>
 
-          <Footer />
+          {/* <Footer /> */}
     </div>
   );
 };

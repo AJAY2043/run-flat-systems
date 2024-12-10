@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Hero Section */
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Assets/tire-img4.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hero Background (image) */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../Assets/tire-img4.jpg') no-repeat center center/cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 900px;
+  padding: 40px;
+  z-index: 1;
+}
+
+/* Heading Styling with Animation */
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInTop 1.5s ease-out;
+}
+
+/* Paragraph Styling with Animation */
+.hero-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  animation: fadeInLeft 1.5s ease-out;
+}
+
+/* Button Styling with Hover Effect */
+.hero-button {
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInBottom 1.5s ease-out;
+}
+
+.hero-button:hover {
+  background-color: #ff5722;
+  transform: scale(1.1);
+}
+
+/* Top Image Styling */
+.hero-top-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  animation: fadeInTop 1.5s ease-in-out;
+}
+
+/* Fade-in Animations */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    padding: 12px 25px;
+  }
+}

@@ -60,7 +60,7 @@ const ContactUs = () => {
         </form>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

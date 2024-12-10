@@ -46,12 +46,12 @@ const BeadlockSystem = () => {
 
       <br /><br /><br />
 
-      <div className="beadlock-section4">
+      <div className="beadlock-section4" style={{background:'lightblue'}}>
         <strong><h1>For more detailed information or to explore beadlock solutions for your fleet, please contact our experts.</h1></strong>
         <Link to='/contactus'><button>Request A Quote</button></Link>
       </div>
       
-          <Footer/>
+          {/* <Footer/> */}
     </>
   );
 };

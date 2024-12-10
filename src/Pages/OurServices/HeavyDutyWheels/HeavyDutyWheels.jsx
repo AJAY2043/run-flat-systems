@@ -33,12 +33,12 @@ const HeavyDutyWheels = () => {
        
          <br /><br /><br />
        
-        <div className="heavyduty-section3">
+        <div className="heavyduty-section3" style={{background:'lightblue'}}>
           <h2><strong>Heavy duty wheels are a critical component, offering unparalleled support, durability, and performance in demanding environments. Investing in high-quality heavy duty wheels can significantly enhance operational efficiency, safety, and longevity of equipment.</strong></h2>
           <button>Request A Quote</button>  
         </div>
      
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

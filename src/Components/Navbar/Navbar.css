@@ -1,127 +1,142 @@
-/* General Navbar Styling */
-.navbar {
-  background-color: #1e1e2f; /* Deep, dark blue for a premium look */
-  color: #fff;
-  padding: 15px 30px;
+/* Main Navigation */
+*{
+  padding: 0;
+  margin: 0;
+}
+.main-nav {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, #0078D7, #1A202C);
+  color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo Styling */
-.nav-logo {
-  display: flex;
-  align-items: center;
-}
-
-.nav-logo-img {
-  width: 160px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.nav-logo-img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Toggle Menu Icon */
-.menu-icon {
-  display: none;
-  font-size: 1.8rem;
-  color: #ffbb33; /* Gold color for a premium feel */
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.menu-icon:hover {
-  color: #ff8c00; /* Brighter gold when hovered */
-}
-
-/* Navbar Links */
-.nav-menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link {
-  position: relative;
-  padding: 12px 25px;
-  color: #b3b3b3; /* Light grey color for links */
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #ffbb33; /* Gold color on hover */
-  transform: scale(1.05); /* Slight scale effect for interaction */
-}
-
-/* Active Link */
-.nav-link.active {
-  color: #ffbb33; /* Gold color for active link */
+.nav-scroll-marquee {
+  background: #FFD700;
+  text-align: center;
   font-weight: bold;
+  font-size: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
 
-/* Dropdown Styling */
-.nav-dropdown {
-  position: absolute;
-  background-color: #1e1e2f;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  display: none;
-  min-width: 160px;
-  margin-top: 10px;
-  padding: 10px 0;
+.scroll-text {
+  display: inline-block;
+  padding: 0px;
+  /* background: #e2e5eb; */
+  color: #0a0a09;
+  animation: marquee 10s linear infinite;
 }
 
-.nav-item:hover .nav-dropdown {
-  display: block;
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.nav-dropdown .nav-link {
-  color: #b3b3b3;
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
 }
 
-.nav-dropdown .nav-link:hover {
-  background-color: #ff8c00; /* Brighter gold on hover */
-  color: #fff; /* White text on hover */
+.nav-logo img {
+  border-radius: 8px;
 }
 
-/* Responsive Menu - Mobile View */
+/* Mobile Toggle */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Menu Links */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-menu.active {
+  flex-direction: column;
+  gap: 10px;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.nav-item {
+  position: relative;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-item span:hover,
+.nav-item a:hover {
+  color: #FFD700;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: white;
+  color: black;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 0px;
+  padding-right: 60px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background: #FFD700;
+  color: white;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .menu-icon {
+  .nav-toggle {
     display: block;
   }
 
   .nav-menu {
     display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1e1e2f;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 60px;
   }
 
   .nav-menu.active {
     display: flex;
   }
 
-  .nav-link {
-    padding: 15px;
+  .nav-menu .nav-item {
     text-align: center;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
